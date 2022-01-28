@@ -11,9 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingVertical="16dp"
-        android:text="Welcome to Android App Development"
+        android:text="@string/welcome"
         android:textAlignment="center"
-        android:textSize="40sp"
+        android:textSize="@dimen/welcome_text_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,18 +22,20 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:contentDescription="@string/android_logo"
         android:src="@drawable/android"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:contentDescription="@string/bug_image"
         android:src="@drawable/bug"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
